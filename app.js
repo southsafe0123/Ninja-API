@@ -13,8 +13,9 @@ const productsRouter = require('./routes/products');
 const newsRouter = require('./routes/news');
 const mongoose = require('mongoose');
 const cors = require('cors');
+
 //ket noi mongoose
-mongoose.connect('mongodb://localhost:27017/demo123')
+mongoose.connect('mongodb+srv://admin:admin@ninja-db.tu6pzeu.mongodb.net/ninja-db?retryWrites=true&w=majority')
   .then(() => console.log('Connected successfully'))
   .catch(err => console.log(err));
   require('./components/categories/model');
